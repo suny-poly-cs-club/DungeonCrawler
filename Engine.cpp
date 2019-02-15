@@ -4,22 +4,17 @@
 #define MINOR 3
 
 
-Engine::Engine()
-{
+Engine::Engine() {
 }
 
-
-Engine::~Engine()
-{
+Engine::~Engine() {
 	cleanup();
 }
 
-bool Engine::initEngine()
-{
+bool Engine::initEngine() {
 
 	//Initialize GLFW
-	if (!glfwInit())
-	{
+	if (!glfwInit()) {
 		fprintf(stderr, "Failed to initialize GLFW\n");
 		return false;
 	}
@@ -54,13 +49,11 @@ bool Engine::initEngine()
 
 }
 
-bool Engine::initAssets()
-{
+bool Engine::initAssets() {
 	return true;
 }
 
-void Engine::run()
-{
+void Engine::run() {
 	glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);
 	glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
 
@@ -98,8 +91,7 @@ void Engine::run()
 	}
 }
 
-void Engine::cleanup()
-{
+void Engine::cleanup() {
 	//Delete gameobjects
 	for (int i = 0; i < gameObjects.size(); i++) {
 		delete gameObjects.at(i);
@@ -108,10 +100,10 @@ void Engine::cleanup()
 	glfwTerminate();
 }
 
-void Engine::update(GameState & state)
-{
+void Engine::update(GameState & state) {
+
 }
 
-void Engine::draw(GameState & state, Renderer & renderer)
-{
+void Engine::draw(GameState & state, Renderer & renderer) {
+	
 }
