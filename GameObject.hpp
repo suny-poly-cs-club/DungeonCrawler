@@ -20,6 +20,6 @@ public:
 
 private:
 	std::vector<Component*> components;
-	std::vector<Model*> models;
+	//std::vector<Model*> models;
 };
 

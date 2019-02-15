@@ -3,7 +3,10 @@
 #include <vector>
 #include "GameState.hpp"
 #include "Renderer.hpp"
-#include "GameObject.h"
+#include "GameObject.hpp"
+#include <glew.h>
+#include <glfw3.h>
+#include <iostream>
 
 class Engine
 {
@@ -23,5 +26,11 @@ private:
 	Renderer* renderer;
 
 	std::vector<GameObject*> gameObjects;
+
+	GLFWwindow* window;
+
+	const int WIDTH = 800;
+	const int HEIGHT = 800;
+	const char* TITLE = "Engine";
 };
 
