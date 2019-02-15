@@ -1,12 +1,7 @@
-#include "GameObject.h"
+#include "GameObject.hpp"
 
-
-
-GameObject::GameObject()
-{
+GameObject::GameObject() {
 }
 
-
-GameObject::~GameObject()
-{
+GameObject::~GameObject() {
 }

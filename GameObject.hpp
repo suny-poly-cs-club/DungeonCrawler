@@ -4,9 +4,9 @@
 #include "GameState.hpp"
 #include "Renderer.hpp"
 #include <vector>
+#include <iostream>
 
-class GameObject
-{
+class GameObject {
 public:
 	GameObject();
 	~GameObject();
@@ -20,6 +20,6 @@ public:
 
 private:
 	std::vector<Component*> components;
-	std::vector<Model*> models;
+	//std::vector<Model*> models;
 };
 

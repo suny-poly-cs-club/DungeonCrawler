@@ -1,8 +1,7 @@
 #pragma once
 
 #include "GameState.hpp"
-class Component
-{
+class Component {
 public:
 	Component();
 	~Component();
