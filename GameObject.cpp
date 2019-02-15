@@ -2,11 +2,10 @@
 
 
 
-GameObject::GameObject()
-{
+GameObject::GameObject() {
 }
 
 
-GameObject::~GameObject()
-{
+GameObject::~GameObject() {
+    std::cout << "clear\n";
 }

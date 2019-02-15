@@ -2,11 +2,9 @@
 
 
 
-GameState::GameState()
-{
+GameState::GameState() {
 }
 
 
-GameState::~GameState()
-{
+GameState::~GameState() {
 }
