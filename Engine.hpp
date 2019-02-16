@@ -4,8 +4,8 @@
 #include "GameState.hpp"
 #include "Renderer.hpp"
 #include "GameObject.hpp"
-#include <glew.h>
-#include <glfw3.h>
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
 #include <iostream>
 
 class Engine
