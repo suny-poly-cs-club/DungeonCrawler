@@ -1,8 +1,10 @@
 #include <iostream>
+#include <typeinfo>
 
 #include "Engine.hpp"
 
 int main() {
+
 
 	Engine engine;
 	if (!engine.initEngine()) {
@@ -16,5 +18,6 @@ int main() {
 	engine.run();
 
 	engine.cleanup();
+	
 
 }
