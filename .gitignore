@@ -3,6 +3,8 @@ Linking/
 
 Project1/
 
+build/
+
 *.dll
 
 *.txt
