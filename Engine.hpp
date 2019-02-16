@@ -23,8 +23,6 @@ private:
 	void update(GameState& state);
 	void draw(GameState& state, Renderer& renderer);
 
-	Renderer* renderer;
-
 	std::vector<GameObject*> gameObjects;
 
 	GLFWwindow* window;
