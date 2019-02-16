@@ -56,23 +56,30 @@ bool Engine::initEngine()
 
 bool Engine::initAssets()
 {
+	gameObjects.push_back(new GameObject());
+
 	return true;
 }
 
 void Engine::run()
 {
 	glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);
-	glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
+	//glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
 
 	// Enable depth test
 	glEnable(GL_DEPTH_TEST);
 	// Accept fragment if it closer to the camera than the former one
 	glDepthFunc(GL_LESS);
 	// Cull triangles which normal is not towards the camera
-	//glEnable(GL_CULL_FACE);
+	glEnable(GL_CULL_FACE);
 
 	//Clear Color
 	glClearColor(0.0f, 0.4f, 0.8f, 0.0f);
+
+	//GameState
+	GameState gameState;
+	//Renderer
+	Renderer renderer;
 
 	while (glfwGetKey(window, GLFW_KEY_ESCAPE) != GLFW_PRESS &&
 		glfwWindowShouldClose(window) == 0) {
@@ -83,12 +90,18 @@ void Engine::run()
 		//Input
 		glfwPollEvents();
 
+		//Update GameState
+		gameState.updateState();
 
 		//Update
-
+		for (int i = 0; i < gameObjects.size(); i++) {
+			gameObjects.at(i)->update(gameState);
+		}
 
 		//Render
-
+		for (int i = 0; i < gameObjects.size(); i++) {
+			gameObjects.at(i)->draw(gameState, renderer);
+		}
 
 
 		//End
@@ -104,6 +117,7 @@ void Engine::cleanup()
 	for (int i = 0; i < gameObjects.size(); i++) {
 		delete gameObjects.at(i);
 	}
+	gameObjects.clear();
 
 	glfwTerminate();
 }
