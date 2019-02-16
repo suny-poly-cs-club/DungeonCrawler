@@ -12,6 +12,10 @@ GameObject::GameObject()
 
 GameObject::~GameObject()
 {
+	for (int i = 0; i < components.size(); i++) {
+		delete components.at(i);
+	}
+	components.clear();
 }
 
 void GameObject::update(GameState & gameState)
