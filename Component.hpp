@@ -1,12 +1,21 @@
 #pragma once
 
 #include "GameState.hpp"
+<<<<<<< HEAD
 class Component {
+=======
+#include "GameObject.hpp"
+class Component
+{
+>>>>>>> master
 public:
-	Component();
+	Component(GameObject* go);
 	~Component();
 
-	void initComponent();
-	void update(GameState& gameState);
+	virtual void initComponent() = 0;
+	virtual void update(GameState& gameState) = 0;
+
+private:
+	GameObject* gameObject;
 };
 

@@ -7,6 +7,8 @@ public:
 	double getTimeMilliseconds();
 	double getTimeSeconds();
 
+	void updateState();
+
 	bool isPaused();
 };
 

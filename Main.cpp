@@ -4,6 +4,7 @@
 
 int main() {
 
+
 	Engine engine;
 	if (!engine.initEngine()) {
 		std::cerr << "Could not initialize engine!\n";
@@ -16,5 +17,6 @@ int main() {
 	engine.run();
 
 	engine.cleanup();
+	
 
 }
