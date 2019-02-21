@@ -2,10 +2,10 @@
 
 
 
-Component::Component()
+Component::Component(GameObject* go)
 {
+	gameObject = go;
 }
-
 
 Component::~Component()
 {
