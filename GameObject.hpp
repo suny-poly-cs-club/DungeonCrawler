@@ -4,7 +4,7 @@
 #include "GameState.hpp"
 #include "Renderer.hpp"
 #include <vector>
-#include <iostream>
+#include <typeinfo>
 
 class GameObject {
 public:
@@ -14,12 +14,14 @@ public:
 	void update(GameState& gameState);
 	void draw(GameState& gameState, Renderer& renderer);
 
+	template<typename T>
 	bool addComponent();
-	bool getComponent();
+	template<typename T>
+	T* getComponent();
+	template<typename T>
 	bool removeComponent();
 
 private:
 	std::vector<Component*> components;
 	//std::vector<Model*> models;
 };
-
