@@ -1,10 +1,11 @@
 #pragma once
 
-#include "GameObject.hpp"
 #include "Component.hpp"
 #include <glm/vec2.hpp>
+#include "GameObject.hpp"
 
 class GameObject;
+
 
 class TransformComponent : public Component
 {
@@ -15,6 +16,10 @@ public:
 	void setPosition(float x, float y);
 	void setScale(float x, float y);
 	void setRotation(float d);
+
+	glm::vec2 getPosition();
+	glm::vec2 getScale();
+	float getRotation();
 
 	void setPositionX(float x);
 	void setPositionY(float y);
@@ -28,6 +33,6 @@ public:
 private:
 	glm::vec2 position;
 	glm::vec2 scale;
-	float rotation;
+	float rotation = 0;
 };
 
