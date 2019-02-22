@@ -10,3 +10,11 @@ Component::Component(GameObject* go)
 Component::~Component()
 {
 }
+
+void Component::initComponent()
+{
+}
+
+void Component::update(GameState & gameState)
+{
+}
