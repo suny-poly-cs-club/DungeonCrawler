@@ -1,7 +1,12 @@
 #include "Component.hpp"
 
-Component::Component() {
+
+
+Component::Component(GameObject* go)
+{
+	gameObject = go;
 }
 
-Component::~Component() {
+Component::~Component()
+{
 }
