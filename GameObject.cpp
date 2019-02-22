@@ -1,11 +1,14 @@
 #include "GameObject.hpp"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 GameObject::GameObject() {
 }
 
 GameObject::~GameObject() {
 =======
+=======
+>>>>>>> master
 
 #include <iostream>
 GameObject::GameObject()
@@ -40,7 +43,9 @@ bool GameObject::addComponent()
 	try {
 		static_assert(std::is_base_of<Component, T>::value, "type parameter of this class must derive from Component");
 
-		components.push_back(new T);
+		components.push_back(new T(this));
+
+		return true;
 	}
 	catch (...) {
 		std::cerr << "Failed to add component! Type " << typeid(T).name() << "is not a valid type!\n";
@@ -76,5 +81,8 @@ bool GameObject::removeComponent()
 
 	return false;
 
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 }

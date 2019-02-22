@@ -5,12 +5,19 @@
 #include "Renderer.hpp"
 #include <vector>
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include <iostream>
 =======
 #include <typeinfo>
 >>>>>>> master
+=======
+#include <typeinfo>
+>>>>>>> master
 
-class GameObject {
+class Component;
+
+class GameObject
+{
 public:
 	GameObject();
 	~GameObject();

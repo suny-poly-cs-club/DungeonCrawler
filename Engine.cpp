@@ -46,14 +46,21 @@ bool Engine::initEngine() {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 	return true;
 
 }
 
-bool Engine::initAssets() {
+bool Engine::initAssets()
+{
+	gameObjects.push_back(new GameObject());
+
 	return true;
 }
 
+<<<<<<< HEAD
 void Engine::run() {
 =======
 	return true;
@@ -70,6 +77,10 @@ bool Engine::initAssets()
 void Engine::run()
 {
 >>>>>>> master
+=======
+void Engine::run()
+{
+>>>>>>> master
 	glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);
 	//glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
 
@@ -82,8 +93,18 @@ void Engine::run()
 
 	//Clear Color
 <<<<<<< HEAD
+<<<<<<< HEAD
 	glClearColor(0.0f, 0.4f, 0.8f, 0.0f);
 
+=======
+	glClearColor(0.0f, 0.4f, 0.8f, 0.0f);
+
+	//GameState
+	GameState gameState;
+	//Renderer
+	Renderer renderer;
+
+>>>>>>> master
 =======
 	glClearColor(0.0f, 0.4f, 0.8f, 0.0f);
 
@@ -120,6 +141,9 @@ void Engine::run()
 		glfwSwapBuffers(window);
 		glfwPollEvents();
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 
 	}
 }
@@ -129,6 +153,7 @@ void Engine::cleanup() {
 	for (int i = 0; i < gameObjects.size(); i++) {
 		delete gameObjects.at(i);
 	}
+	gameObjects.clear();
 
 	glfwTerminate();
 }
@@ -140,6 +165,7 @@ void Engine::update(GameState & state) {
 void Engine::draw(GameState & state, Renderer & renderer) {
 	
 }
+<<<<<<< HEAD
 =======
 
 	}
@@ -163,4 +189,6 @@ void Engine::update(GameState & state)
 void Engine::draw(GameState & state, Renderer & renderer)
 {
 }
+>>>>>>> master
+=======
 >>>>>>> master

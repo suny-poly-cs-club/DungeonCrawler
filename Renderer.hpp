@@ -1,9 +1,12 @@
 #pragma once
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 class Renderer {
 
 =======
+=======
+>>>>>>> master
 #include "Shader.hpp"
 #include <vector>
 
@@ -15,6 +18,9 @@ typedef enum {
 
 class Renderer
 {
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 public:
 
