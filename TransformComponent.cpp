@@ -28,6 +28,21 @@ void TransformComponent::setRotation(float r)
 	rotation = r;
 }
 
+glm::vec2 TransformComponent::getPosition()
+{
+	return position;
+}
+
+glm::vec2 TransformComponent::getScale()
+{
+	return scale;
+}
+
+float TransformComponent::getRotation()
+{
+	return rotation;
+}
+
 void TransformComponent::setPositionX(float x)
 {
 	position.x = x;
