@@ -1,0 +1,20 @@
+/home/ditenado/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/191.5532.20/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/ditenado/A-SCHOOL/engine/DungeonCrawler
+CMake Error at CMakeLists.txt:15 (find_package):
+  By not providing "FindGLFW.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "GLFW", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "GLFW" with any of
+  the following names:
+
+    GLFWConfig.cmake
+    glfw-config.cmake
+
+  Add the installation prefix of "GLFW" to CMAKE_PREFIX_PATH or set
+  "GLFW_DIR" to a directory containing one of the above files.  If "GLFW"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/ditenado/A-SCHOOL/engine/DungeonCrawler/cmake-build-debug/CMakeFiles/CMakeOutput.log".
