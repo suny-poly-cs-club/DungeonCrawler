@@ -8,7 +8,6 @@
 #include <iostream>
 #include "TransformComponent.hpp"
 
-class Component;
 class TransformComponent;
 
 class GameObject

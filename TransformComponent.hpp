@@ -1,10 +1,11 @@
 #pragma once
 
-#include "GameObject.hpp"
 #include "Component.hpp"
 #include <glm/vec2.hpp>
+#include "GameObject.hpp"
 
 class GameObject;
+
 
 class TransformComponent : public Component
 {
