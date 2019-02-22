@@ -6,6 +6,8 @@
 #include <vector>
 #include <typeinfo>
 
+class Component;
+
 class GameObject {
 public:
 	GameObject();

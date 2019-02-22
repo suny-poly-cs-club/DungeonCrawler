@@ -2,11 +2,15 @@
 
 
 
-Component::Component(GameObject* go)
-{
+Component::Component(GameObject* go) {
 	gameObject = go;
 }
 
-Component::~Component()
-{
+Component::~Component() {
+}
+void Component::initComponent() {
+
+}
+void Component::update(GameState& gameState) {
+
 }
