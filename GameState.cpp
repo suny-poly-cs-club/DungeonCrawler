@@ -2,13 +2,11 @@
 
 
 
-GameState::GameState()
-{
+GameState::GameState() {
 }
 
 
-GameState::~GameState()
-{
+GameState::~GameState() {
 }
 
 void GameState::updateState()

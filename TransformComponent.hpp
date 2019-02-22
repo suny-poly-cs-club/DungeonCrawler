@@ -17,6 +17,10 @@ public:
 	void setScale(float x, float y);
 	void setRotation(float d);
 
+	glm::vec2 getPosition();
+	glm::vec2 getScale();
+	float getRotation();
+
 	void setPositionX(float x);
 	void setPositionY(float y);
 
@@ -29,6 +33,6 @@ public:
 private:
 	glm::vec2 position;
 	glm::vec2 scale;
-	float rotation;
+	float rotation = 0;
 };
 
