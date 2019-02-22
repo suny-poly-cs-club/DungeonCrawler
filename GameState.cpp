@@ -1,12 +1,14 @@
-#include "GameState.h"
+#include "GameState.hpp"
 
 
 
-GameState::GameState()
-{
+GameState::GameState() {
 }
 
 
-GameState::~GameState()
+GameState::~GameState() {
+}
+
+void GameState::updateState()
 {
 }
