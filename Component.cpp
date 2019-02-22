@@ -14,3 +14,11 @@ void Component::initComponent() {
 void Component::update(GameState& gameState) {
 
 }
+
+void Component::initComponent()
+{
+}
+
+void Component::update(GameState & gameState)
+{
+}

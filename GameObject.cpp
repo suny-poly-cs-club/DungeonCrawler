@@ -35,6 +35,7 @@ bool GameObject::addComponent()
 		static_assert(std::is_base_of<Component, T>::value, "type parameter of this class must derive from Component");
 
 		components.push_back(new T(this));
+
 		return true;
 	}
 	catch (...) {
