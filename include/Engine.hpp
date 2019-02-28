@@ -1,15 +1,15 @@
 #pragma once
 
+#include <iostream>
 #include <vector>
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
 #include "GameState.hpp"
 #include "Renderer.hpp"
 #include "GameObject.hpp"
-#include <GL/glew.h>
-#include <GLFW/glfw3.h>
-#include <iostream>
 
 class Engine {
-	
+
 public:
 	Engine();
 	~Engine();
@@ -33,4 +33,3 @@ private:
 	const int HEIGHT = 800;
 	const char* TITLE = "Engine";
 };
-

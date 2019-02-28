@@ -1,4 +1,5 @@
 #pragma once
+
 class GameState {
 public:
 	GameState();
@@ -9,4 +10,3 @@ public:
 
 	bool isPaused();
 };
-

@@ -1,6 +1,6 @@
 #pragma once
-
 #include "GameState.hpp"
+
 class Component {
 public:
 	Component();
@@ -9,4 +9,3 @@ public:
 	void initComponent();
 	void update(GameState& gameState);
 };
-

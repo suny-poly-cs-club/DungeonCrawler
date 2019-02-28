@@ -87,8 +87,7 @@ void Engine::run() {
 		//End
 		glfwSwapBuffers(window);
 		glfwPollEvents();
-
-	}
+	}// end while
 }
 
 void Engine::cleanup() {
@@ -105,5 +104,5 @@ void Engine::update(GameState & state) {
 }
 
 void Engine::draw(GameState & state, Renderer & renderer) {
-	
+
 }
