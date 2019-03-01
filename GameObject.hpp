@@ -9,12 +9,10 @@
 #include <iostream>
 =======
 #include <typeinfo>
->>>>>>> master
-=======
-#include <typeinfo>
->>>>>>> master
+#include <iostream>
+#include "TransformComponent.hpp"
 
-class Component;
+class TransformComponent;
 
 class GameObject
 {
@@ -32,7 +30,12 @@ public:
 	template<typename T>
 	bool removeComponent();
 
+	TransformComponent* getTransform();
+
 private:
 	std::vector<Component*> components;
+
+	TransformComponent* transform;
+
 	//std::vector<Model*> models;
 };

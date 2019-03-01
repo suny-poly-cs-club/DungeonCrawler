@@ -1,13 +1,6 @@
 #pragma once
 
 #include "GameState.hpp"
-<<<<<<< HEAD
-<<<<<<< HEAD
-class Component {
-=======
-=======
->>>>>>> master
-#include "GameObject.hpp"
 
 class GameObject;
 

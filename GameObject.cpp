@@ -10,12 +10,10 @@ GameObject::~GameObject() {
 =======
 >>>>>>> master
 
-#include <iostream>
 GameObject::GameObject()
 {
-	addComponent<Component>() ? std::cout << "added component!\n" : std::cout << "woops\n";
-	removeComponent<Component>() ? std::cout << "removed component!\n" : std::cout << "woops2\n";
-	std::cout << components.size() << std::endl;
+	transform = new TransformComponent(this);
+	components.push_back(transform);
 }
 
 
@@ -33,6 +31,11 @@ void GameObject::update(GameState & gameState)
 
 void GameObject::draw(GameState & gameState, Renderer & renderer)
 {
+}
+
+TransformComponent * GameObject::getTransform()
+{
+	return transform;
 }
 
 
