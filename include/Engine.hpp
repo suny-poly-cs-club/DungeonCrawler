@@ -2,7 +2,7 @@
 
 #include <vector>
 #include "GameState.hpp"
-#include "Renderer.hpp"
+#include "Renderer/Renderer.hpp"
 #include "GameObject.hpp"
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
