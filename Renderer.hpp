@@ -3,9 +3,10 @@
 #include "Shader.hpp"
 #include <vector>
 
-typedef enum {
+typedef enum{
 
-	STANDARD
+	SHADER_STANDARD,
+	TEXTURE_SHADER
 
 }SHADERS;
 
@@ -16,7 +17,13 @@ public:
 	Renderer();
 	~Renderer();
 
-	void createProgram();
+	//activate and deactivate active shader shader
+	void activate();
+	void deactivate();
+
+	//Set active shader
+	void setShader(SHADERS shader);
+
 
 	std::vector<Shader*> shaders;
 };

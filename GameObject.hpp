@@ -6,6 +6,7 @@
 #include <vector>
 #include <typeinfo>
 #include <iostream>
+#include "Model.hpp"
 #include "TransformComponent.hpp"
 
 class TransformComponent;
@@ -32,5 +33,5 @@ private:
 
 	TransformComponent* transform;
 
-	//std::vector<Model*> models;
+	std::vector<Model*> models;
 };

@@ -2,7 +2,7 @@
 
 
 
-Shader::Shader()
+Shader::Shader(std::string vertex, std::string fragment)
 {
 }
 
