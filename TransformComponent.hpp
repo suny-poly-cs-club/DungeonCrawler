@@ -3,6 +3,7 @@
 #include "Component.hpp"
 #include <glm/vec2.hpp>
 #include "GameObject.hpp"
+#include <glm/mat4x4.hpp>
 
 class GameObject;
 
@@ -29,6 +30,8 @@ public:
 
 	void translate(float x, float y);
 	void rotate(float r);
+
+	glm::mat4x4 getModelMatrix();
 
 private:
 	glm::vec2 position;

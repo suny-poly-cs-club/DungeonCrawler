@@ -72,3 +72,8 @@ void TransformComponent::rotate(float r)
 {
 	rotation += r;
 }
+
+glm::mat4x4 TransformComponent::getModelMatrix()
+{
+	return glm::mat4x4(1);
+}
