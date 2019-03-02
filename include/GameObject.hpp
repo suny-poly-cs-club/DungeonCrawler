@@ -2,11 +2,11 @@
 
 #include "Component.hpp"
 #include "GameState.hpp"
-#include "Renderer.hpp"
+#include "Renderer/Renderer.hpp"
 #include <vector>
 #include <typeinfo>
 #include <iostream>
-#include "Model.hpp"
+#include "Renderer/Model.hpp"
 #include "TransformComponent.hpp"
 
 class TransformComponent;
