@@ -25,6 +25,8 @@ public:
 	void setShader(SHADERS shader);
 
 
+private:
+	SHADERS currentShader = SHADER_STANDARD;
 	std::vector<Shader*> shaders;
 };
 

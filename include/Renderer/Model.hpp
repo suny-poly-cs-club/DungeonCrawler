@@ -4,7 +4,7 @@
 #include "Mesh.hpp"
 #include <vector>
 #include "Renderer.hpp"
-#include <glm/mat4x4.hpp>
+#include <glm/glm.hpp>
 
 class Model
 {
@@ -14,7 +14,7 @@ public:
 
 	void addMesh(Mesh* mesh);
 
-	virtual void draw(Renderer* renderer, glm::mat4x4 modelMatrix);
+	virtual void draw(Renderer* renderer, glm::mat4 &modelMatrix);
 
 private:
 	std::vector<Mesh*> meshes;

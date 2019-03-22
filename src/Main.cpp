@@ -16,7 +16,7 @@ int main() {
 	}
 	engine.run();
 
-	engine.cleanup();
+	//engine.cleanup();
 	
 
 }
